@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge one : Arithmetic operation </title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+ <div class="container">
+        <div class="input-content">
+         <label for="value-one">Value-one:</label>
+         </label>
+         <input type="number" class="first-value" id="input-one" placeholder="Enter only digits">
+         <label for="value-one">Value-two:</label>
+         <input type="number" class="second-value" id="input-two"placeholder="Enter onl digits">
+    </div>
+<div class="output-content">
+         <label for="output">Output:</label>
+         <output type="number"class="display" id="display"></output>
+    </div>
+    <div class="operator">
+        <button type="button" onclick="add()" id="add" value="+">+</button>
+        <button type="button" onclick="sub()" id="sub" value="-">-</button>
+        <button type="button" onclick="mul()" id="mul" value="*">*</button>
+        <button type="button" onclick="div()" id="div" value="/">/</button>
+       </div>
+</div>
+<script>
+    
+function add(){
+    let valueOne = parseFloat(document.getElementById("input-one").value);
+    let valueTwo = parseFloat(document.getElementById("input-two").value);
+    document.getElementById("display").innerHTML = valueOne+valueTwo;
+    console.log(document.getElementById("display").innerHTML);
+    valueOne.value ="";
+    valueTwo.value ="";
+    }
+    function sub(){
+    let valueOne = parseFloat(document.getElementById("input-one").value);
+    let valueTwo = parseFloat(document.getElementById("input-two").value);
+    document.getElementById("display").innerHTML = valueOne-valueTwo;
+    console.log(document.getElementById("display").innerHTML);
+    valueOne.value ="";
+    valueTwo.value ="";
+    }
+    function mul(){
+    let valueOne = parseFloat(document.getElementById("input-one").value);
+    let valueTwo = parseFloat(document.getElementById("input-two").value);
+    document.getElementById("display").innerHTML = valueOne*valueTwo;
+    console.log(document.getElementById("display").innerHTML);
+    valueOne.value ="";
+    valueTwo.value ="";
+    }
+    function div(){
+    let valueOne = parseFloat(document.getElementById("input-one").value);
+    let valueTwo = parseFloat(document.getElementById("input-two").value);
+    document.getElementById("display").innerHTML = valueOne/valueTwo;
+    console.log(document.getElementById("display").innerHTML);
+    valueOne.value ="";
+    valueTwo.value ="";
+    }
+</script>
+    
+</body>
+</html>

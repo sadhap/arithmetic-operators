@@ -1,0 +1,83 @@
+*{
+    background-color: aliceblue;
+    margin-top: 0;
+    font-size: 16px;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+.container{
+    height:85vh;
+    background-color: rgb(20, 206, 206);
+    padding:18px;
+    /* box-sizing: border-box; */
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    margin: 55px auto;
+   
+}
+.input-content,.output-content{
+    background-color:antiquewhite;
+    padding:30px;
+    margin-top: 20px;
+    align-items: center;
+       color: rgb(0, 0, 0);
+    box-shadow:  -5px -5px 20px rgb(1, 1, 1)
+    ,5px 5px 20px rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+   
+   
+}
+.first-value,.second-value{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    color: aliceblue;
+    border-radius: 5px;
+   
+
+}
+.output-content{
+    background-color: rgb(255, 248, 248);
+    padding:8px;
+    margin: 8px;
+   
+}
+input::placeholder{
+    color:aliceblue;
+    }
+ .operator{
+    background-color:rgb(254, 255, 255);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,50px);
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding:0;
+    margin-top: 45px;
+    border-radius:10px;
+    box-shadow:  -5px -5px 20px rgb(0, 0, 0)
+    ,5px 5px 20px rgb(0, 0, 0);
+    }
+    button{
+        background-color:rgb(0, 0, 0);
+        height: 55px;
+        width: 55px;
+        border:none;
+        border-radius: 50px;
+        margin-bottom: 10px;
+        color: rgb(247, 242, 242);
+        margin-top:20px;
+        margin-bottom: 30px;
+        box-shadow:  -5px -5px 20px rgb(0, 0, 0)
+    ,5px 5px 20px rgb(0, 0, 0);
+       
+    }
